@@ -147,7 +147,9 @@ function renderDefaultOption<T>(
       if (optionItem) {
         return (
           <span key={key} onClick={onClick}>
-            <Tooltip title={optionItem.text}>{optionItem.icon}</Tooltip>
+            <Tooltip title={optionItem.text}>
+              <div>{optionItem.icon}</div>
+            </Tooltip>
           </span>
         );
       }
